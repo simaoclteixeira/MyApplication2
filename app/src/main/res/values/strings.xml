@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="name">Name</string>
-    <string name="pesquisar">PESQUISAR</string>
-    <string name="cancelar">CANCELAR</string>
-    <string name="fabricante">Fabricante:</string>
+    <string name="pesquisar">Search</string>
+    <string name="cancelar">Cancel</string>
+    <string name="fabricante">Manufacturer:</string>
+    <string name="obrigatorio_escrever">Enter the manufacturer</string>
+    <string name="caracteres_especiais">Invalid special character</string>
 </resources>
