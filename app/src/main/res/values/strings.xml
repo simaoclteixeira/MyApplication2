@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="name">Name</string>
+    <string name="pesquisar">PESQUISAR</string>
+    <string name="cancelar">CANCELAR</string>
+    <string name="fabricante">Fabricante:</string>
 </resources>

@@ -19,11 +19,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Button button1 = findViewById(R.id.buttonCarros);
         Button button2 = findViewById(R.id.buttonMotas);
-        Button button3 = findViewById(R.id.buttonContatos);
 
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
-        button3.setOnClickListener(this);
+
 
 
         }
@@ -37,8 +36,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         case R.id.buttonMotas:
             openActivity3();
             break;
-            case R.id.buttonContatos:
-                openActivity4();
 
     }
 }
