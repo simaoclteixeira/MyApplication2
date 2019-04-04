@@ -6,31 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/editTextFabricante"
-        android:layout_width="wrap_content"
-        android:layout_height="54dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginBottom="454dp"
-        android:ems="10"
-        android:inputType="textPersonName" />
-
     <TextView
         android:id="@+id/textView"
-        android:layout_width="131dp"
-        android:layout_height="45dp"
+        android:layout_width="280dp"
+        android:layout_height="41dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="248dp"
-        android:layout_marginRight="248dp"
-        android:layout_marginBottom="454dp"
-        android:text="@string/fabricante"
-        android:textSize="24sp" />
+        android:layout_marginEnd="129dp"
+        android:layout_marginRight="129dp"
+        android:layout_marginBottom="571dp"
+        android:text="@string/fabricante_e_modelo"
+        android:textSize="22sp" />
 
     <Button
         android:id="@+id/buttonPesquisar"
@@ -42,7 +29,7 @@
         android:layout_marginEnd="66dp"
         android:layout_marginRight="66dp"
         android:layout_marginBottom="143dp"
-        android:text="@string/pesquisar" />
+        android:text="@string/save" />
 
     <Button
         android:id="@+id/buttonCancelar"
@@ -59,5 +46,21 @@
         android:layout_marginRight="242dp"
         android:layout_marginBottom="144dp"
         android:text="@string/cancelar" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="527dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TextInputLayoutNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
 
 </RelativeLayout>

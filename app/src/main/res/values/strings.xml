@@ -4,6 +4,13 @@
     <string name="pesquisar">Search</string>
     <string name="cancelar">Cancel</string>
     <string name="fabricante">Manufacturer:</string>
-    <string name="obrigatorio_escrever">Enter the manufacturer</string>
+    <string name="obrigatorio_escrever">Enter the manufacturer and model</string>
     <string name="caracteres_especiais">Invalid special character</string>
+    <string name="save">Save</string>
+    <string name="fabricante_e_modelo">Manufacturer and model:</string>
+    <string name="add">ADD</string>
+    <string name="edit">EDIT</string>
+    <string name="delete">DELETE</string>
+    <string name="carros">CARROS</string>
 </resources>
+

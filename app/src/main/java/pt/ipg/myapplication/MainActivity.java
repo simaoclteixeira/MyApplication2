@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()){
         case R.id.buttonCarros:
-            openActivity2();
+            openMenuCarros();
             break;
         case R.id.buttonMotas:
             openActivity3();
@@ -42,8 +42,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
 
-        public void openActivity2() {
-            Intent intent = new Intent(this, Activity2.class);
+        public void openMenuCarros() {
+            Intent intent = new Intent(this, MenuCarros.class);
             startActivity(intent);
         }
 

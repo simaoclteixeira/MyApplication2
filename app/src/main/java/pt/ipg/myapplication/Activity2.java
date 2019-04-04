@@ -29,7 +29,7 @@ public class Activity2 extends AppCompatActivity {
         buttonPesquisar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                EditText editTextFabricante = findViewById(R.id.editTextFabricante);
+                EditText editTextFabricante = findViewById(R.id.TextInputLayoutNome);
                 String mensagem = editTextFabricante.getText().toString();
 
                 if (mensagem.trim().length()==0) {
@@ -38,7 +38,7 @@ public class Activity2 extends AppCompatActivity {
                     editTextFabricante.setError(getString(R.string.caracteres_especiais));
                 }else{
                     finish();
-                    Toast.makeText(Activity2.this,"A pesquisar...",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Activity2.this,"Carro adicionado.",Toast.LENGTH_SHORT).show();
                 }
             }
         });
