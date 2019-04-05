@@ -33,21 +33,28 @@ public class MenuCarros extends Activity implements View.OnClickListener {
                 openActivity2();
                 break;
             case R.id.buttonEdit:
-                openActivity3();
+                openActivity5();
                 break;
             case R.id.buttonDelete:
-                ();
+                openActivity6();
                 break;
         }
     }
 
-    private void openActivity3() {
+
+
+    private void openActivity2() {
         Intent intent = new Intent(this, Activity2.class);
         startActivity(intent);
     }
 
-    public void openActivity2() {
-        Intent intent = new Intent(this, Activity2.class);
+    public void openActivity5() {
+        Intent intent = new Intent(this, Activity5.class);
+        startActivity(intent);
+    }
+
+    private void openActivity6() {
+        Intent intent = new Intent(this, Activity6.class);
         startActivity(intent);
     }
 

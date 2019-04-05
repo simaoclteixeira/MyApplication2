@@ -9,15 +9,15 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 
-public class Activity2 extends AppCompatActivity {
+public class Activity6 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_2);
+        setContentView(R.layout.activity_6);
 
 
-        Button buttonCancelar = findViewById(R.id.buttonCancelar);
+        Button buttonCancelar = findViewById(R.id.buttonCancel2);
         buttonCancelar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -25,11 +25,11 @@ public class Activity2 extends AppCompatActivity {
             }
         });
 
-        Button buttonPesquisar = findViewById(R.id.buttonSave);
+        Button buttonPesquisar = findViewById(R.id.buttonDelete);
         buttonPesquisar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                EditText editTextFabricante = findViewById(R.id.TextInputLayoutNome);
+                EditText editTextFabricante = findViewById(R.id.TextInputLayoutNomeDel);
                 String mensagem = editTextFabricante.getText().toString();
 
                 if (mensagem.trim().length()==0) {
@@ -38,7 +38,7 @@ public class Activity2 extends AppCompatActivity {
                     editTextFabricante.setError(getString(R.string.caracteres_especiais));
                 }else{
                     finish();
-                    Toast.makeText(Activity2.this,"Carro adicionado.",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Activity6.this,"Carro eliminado.",Toast.LENGTH_SHORT).show();
                 }
             }
         });

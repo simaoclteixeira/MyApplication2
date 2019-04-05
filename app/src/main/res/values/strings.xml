@@ -11,6 +11,9 @@
     <string name="add">ADD</string>
     <string name="edit">EDIT</string>
     <string name="delete">DELETE</string>
-    <string name="carros">CARROS</string>
+    <string name="carros">CARS</string>
+    <string name="old_manufacturer_and_model">Old Manufacturer and Model:</string>
+    <string name="new_manufacturer_and_model">New Manufacturer and Model:</string>
+    <string name="motas">MOTORCYCLES</string>
 </resources>
 

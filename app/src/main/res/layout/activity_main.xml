@@ -6,11 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Activity 1" />
-
     <Button
         android:id="@+id/buttonCarros"
         android:layout_width="wrap_content"
@@ -25,7 +20,7 @@
         android:layout_marginTop="360dp"
         android:layout_marginEnd="49dp"
         android:layout_marginRight="49dp"
-        android:text="CARROS" />
+        android:text="@string/carros" />
 
     <Button
         android:id="@+id/buttonMotas"
@@ -41,6 +36,6 @@
         android:layout_marginTop="423dp"
         android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
-        android:text="MOTAS" />
+        android:text="@string/motas" />
 
 </RelativeLayout>
