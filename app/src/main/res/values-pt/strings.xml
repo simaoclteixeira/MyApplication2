@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="pesquisar">Pesquisar</string>
+    <string name="obrigatorio_escrever">Introduza o fabricante</string>
+    <string name="name">Nome</string>
+    <string name="fabricante">Fabricante:</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="caracteres_especiais">Caracter especial inválido</string>
+    <string name="carros">CARROS</string>
+    <string name="motas">MOTAS</string>
+    <string name="old_manufacturer_and_model">Antigo fabricante e modelo:</string>
+    <string name="new_manufacturer_and_model">Novo fabricante e modelo:</string>
+    <string name="delete">Eliminar</string>
+    <string name="edit">Editar</string>
+    <string name="add">Adicionar</string>
+    <string name="fabricante_e_modelo">Fabricante e modelo:</string>
+    <string name="save">Guardar</string>
+</resources>
