@@ -81,6 +81,7 @@ public class Activity6 extends AppCompatActivity {
                                         Sql_Carros.eliminar(carro_sel.getId_Carros());
                                         Toast.makeText(Activity6.this, "Eliminado", Toast.LENGTH_LONG);
                                         ListaCarros.setAdapter(Sql_Carros.listar(Activity6.this));
+                                        
                                         carro_sel=null;
                                         editMarca.setText("");
                                         editModelo.setText("");
