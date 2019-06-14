@@ -8,9 +8,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
@@ -39,7 +37,7 @@ try {
     editMarca = (TextInputEditText) findViewById(R.id.TextInputLayoutMarca);
     editModelo = (TextInputEditText) findViewById(R.id.TextInputLayoutModelo);
     editLotacao = (TextInputEditText) findViewById(R.id.TextInputLayoutLotacao);
-    editTracao = (TextInputEditText) findViewById(R.id.TextInputLayoutTracao);
+    editTracao = (TextInputEditText) findViewById(R.id.TextInputLayoutTracao2);
     editPeso = (TextInputEditText) findViewById(R.id.TextInputLayoutPeso);
     buttonSave =  findViewById(R.id.buttonSaveNovo);
 

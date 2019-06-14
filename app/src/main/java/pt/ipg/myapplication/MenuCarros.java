@@ -18,11 +18,9 @@ public class MenuCarros extends Activity implements View.OnClickListener {
         setContentView(R.layout.activity_menu_carros);
 
         Button button4 = findViewById(R.id.buttonAdd);
-        Button button5 = findViewById(R.id.buttonEdit);
         Button button6 = findViewById(R.id.buttonDelete);
 
         button4.setOnClickListener(this);
-        button5.setOnClickListener(this);
         button6.setOnClickListener(this);
     }
 
@@ -31,9 +29,6 @@ public class MenuCarros extends Activity implements View.OnClickListener {
         switch (v.getId()) {
             case R.id.buttonAdd:
                 openActivity2();
-                break;
-            case R.id.buttonEdit:
-                openActivity5();
                 break;
             case R.id.buttonDelete:
                 openActivity6();

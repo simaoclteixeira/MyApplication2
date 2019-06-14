@@ -4,38 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    >
 
-    <Button
-        android:id="@+id/buttonCarros"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="360dp"
-        android:layout_marginEnd="49dp"
-        android:layout_marginRight="49dp"
-        android:text="@string/carros" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/buttonMotas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="423dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginRight="50dp"
-        android:text="@string/motas" />
+        <Button
+            android:id="@+id/button5motas"
+            android:layout_width="match_parent"
+            android:layout_height="346dp"
+
+            android:background="@drawable/moto" />
+
+        <Button
+            android:id="@+id/button6carros"
+            android:layout_width="match_parent"
+            android:layout_height="384dp"
+
+            android:background="@drawable/car" />
+    </LinearLayout>
 
 </RelativeLayout>
+
+

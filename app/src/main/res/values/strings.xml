@@ -2,12 +2,12 @@
     <string name="app_name">My Application</string>
     <string name="name">Name</string>
     <string name="pesquisar">Search</string>
-    <string name="cancelar">Cancel</string>
+    <string name="cancelar">CANCEL</string>
     <string name="fabricante">Manufacturer:</string>
     <string name="obrigatorio_escrever">Enter the manufacturer and model</string>
     <string name="caracteres_especiais">Invalid special character</string>
     <string name="save">Save</string>
-    <string name="fabricante_e_modelo">Manufacturer and model:</string>
+    <string name="fabricante_e_modelo">Manufacturer and Model:</string>
     <string name="add">ADD</string>
     <string name="edit">EDIT</string>
     <string name="delete">DELETE</string>
@@ -15,5 +15,13 @@
     <string name="old_manufacturer_and_model">Old Manufacturer and Model:</string>
     <string name="new_manufacturer_and_model">New Manufacturer and Model:</string>
     <string name="motas">MOTORCYCLES</string>
+    <string name="marca">Brand:</string>
+    <string name="modelo">Model:</string>
+    <string name="tra_o">Traction:</string>
+    <string name="peso">Weight:</string>
+    <string name="lota_o">Capacity:</string>
+    <string name="please_enter_the_details_of_the_new_car">Please enter the details of the new car:</string>
+    <string name="button">Button</string>
+    <string name="gerir">GERIR</string>
 </resources>
 

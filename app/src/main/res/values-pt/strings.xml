@@ -16,4 +16,10 @@
     <string name="add">Adicionar</string>
     <string name="fabricante_e_modelo">Fabricante e modelo:</string>
     <string name="save">Guardar</string>
+    <string name="marca">Marca:</string>
+    <string name="modelo">Modelo:</string>
+    <string name="tra_o">Tração:</string>
+    <string name="peso">Peso:</string>
+    <string name="lota_o">Lotação:</string>
+    <string name="please_enter_the_details_of_the_new_car">Please enter the details of the new car:</string>
 </resources>

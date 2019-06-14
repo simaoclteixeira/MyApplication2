@@ -17,8 +17,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button button1 = findViewById(R.id.buttonCarros);
-        Button button2 = findViewById(R.id.buttonMotas);
+        Button button1 = findViewById(R.id.button6carros);
+        Button button2 = findViewById(R.id.button5motas);
 
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
@@ -30,10 +30,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-        case R.id.buttonCarros:
+        case R.id.button6carros:
             openMenuCarros();
             break;
-        case R.id.buttonMotas:
+        case R.id.button5motas:
             openActivity3();
             break;
 
