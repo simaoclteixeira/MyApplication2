@@ -8,16 +8,13 @@ import android.widget.Button;
 
 public class MenuCarros extends Activity implements View.OnClickListener {
 
-    private Button buttonAdd;
-    private Button buttonEdit;
-    private Button buttonDelete;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_carros);
 
-        Button button4 = findViewById(R.id.buttonAdd);
+        Button button4 = findViewById(R.id.buttonAdicionar2);
         Button button6 = findViewById(R.id.buttonDelete);
 
         button4.setOnClickListener(this);
@@ -27,7 +24,7 @@ public class MenuCarros extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.buttonAdd:
+            case R.id.buttonAdicionar2:
                 openActivity2();
                 break;
             case R.id.buttonDelete:
@@ -43,10 +40,6 @@ public class MenuCarros extends Activity implements View.OnClickListener {
         startActivity(intent);
     }
 
-    public void openActivity5() {
-        Intent intent = new Intent(this, Activity5.class);
-        startActivity(intent);
-    }
 
     private void openActivity6() {
         Intent intent = new Intent(this, Activity6.class);

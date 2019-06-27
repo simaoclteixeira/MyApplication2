@@ -22,4 +22,5 @@
     <string name="peso">Peso:</string>
     <string name="lota_o">Lotação:</string>
     <string name="please_enter_the_details_of_the_new_car">Please enter the details of the new car:</string>
+    <string name="cilindrada">Cilindrada</string>
 </resources>

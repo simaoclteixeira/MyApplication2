@@ -14,15 +14,15 @@ public class Motas_Sql {
 
     }
 
-    public void inserir(Mota novo){
+    public void inserir(Mota nova){
 
 
         ContentValues dados = new ContentValues();
 
-        dados.put("Marca",novo.getMarca());
-        dados.put("Modelo",novo.getModelo());
-        dados.put("Cilindrada",novo.getCilindrada());
-        dados.put("Peso",(Float) novo.getPeso());
+        dados.put("Marca",nova.getMarca());
+        dados.put("Modelo",nova.getModelo());
+        dados.put("Cilindrada",(Float) nova.getCilindrada());
+        dados.put("Peso",(Float) nova.getPeso());
 
         connection.insertOrThrow("TBL_Motas",null,dados);
 
@@ -44,7 +44,7 @@ public class Motas_Sql {
 
         dados.put("Marca",mota.getMarca());
         dados.put("Modelo",mota.getModelo());
-        dados.put("Cilindrada",mota.getCilindrada());
+        dados.put("Cilindrada",(Float)mota.getCilindrada());
         dados.put("Peso",(Float) mota.getPeso());
 
         connection.update("TBL_Motas",dados,"Id_Motas="+mota.getId_Motas(),null);
@@ -63,7 +63,7 @@ public class Motas_Sql {
             mota.setId_Motas(cursor.getInt(0));
             mota.setMarca(cursor.getString(1));
             mota.setModelo(cursor.getString(2));
-            mota.setCilindrada(cursor.getString(3));
+            mota.setCilindrada(cursor.getFloat(3));
             mota.setPeso(cursor.getFloat(4));
 
             lista.add(mota);

@@ -67,19 +67,6 @@
                     app:layout_constraintStart_toStartOf="parent" />
 
                 <TextView
-                    android:id="@+id/textView7"
-                    android:layout_width="91dp"
-                    android:layout_height="40dp"
-
-                    android:layout_marginStart="60dp"
-                    android:layout_marginLeft="60dp"
-                    android:baselineAligned="false"
-                    android:text="@string/peso"
-                    android:textSize="22sp"
-                    app:layout_constraintBaseline_toBaselineOf="@+id/TextInputLayoutPeso"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-                <TextView
                     android:id="@+id/textView8"
                     android:layout_width="91dp"
                     android:layout_height="40dp"
@@ -97,11 +84,24 @@
 
                     android:layout_marginStart="60dp"
                     android:layout_marginLeft="60dp"
-                    android:layout_marginBottom="100dp"
                     android:text="@string/tra_o"
                     android:textSize="22sp"
                     app:layout_constraintBaseline_toBaselineOf="@+id/TextInputLayoutTracao2"
                     app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="91dp"
+                    android:layout_height="40dp"
+
+                    android:layout_marginStart="60dp"
+                    android:layout_marginLeft="60dp"
+                    android:baselineAligned="false"
+                    android:text="@string/peso"
+                    android:textSize="22sp"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/TextInputLayoutPeso"
+                    app:layout_constraintStart_toStartOf="parent" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -127,14 +127,6 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/TextInputLayoutPeso"
-                    android:layout_width="205dp"
-                    android:layout_height="40dp"
-
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/TextInputLayoutLotacao"
                     android:layout_width="205dp"
                     android:layout_height="40dp"
@@ -144,6 +136,14 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/TextInputLayoutTracao2"
+                    android:layout_width="205dp"
+                    android:layout_height="40dp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TextInputLayoutPeso3"
                     android:layout_width="205dp"
                     android:layout_height="40dp"
 

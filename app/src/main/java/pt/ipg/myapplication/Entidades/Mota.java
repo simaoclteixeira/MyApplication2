@@ -30,11 +30,11 @@ public class Mota {
         Modelo = modelo;
     }
 
-    public String getCilindrada() {
+    public Float getCilindrada() {
         return Cilindrada;
     }
 
-    public void setCilindrada(String cilindrada) {
+    public void setCilindrada(Float cilindrada) {
         Cilindrada = cilindrada;
     }
 
@@ -48,7 +48,7 @@ public class Mota {
 
     private String Marca;
     private String Modelo;
-    private String Cilindrada;
+    private Float Cilindrada;
     private Float Peso;
 
 

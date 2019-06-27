@@ -1,90 +1,179 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorAccent"
     tools:context=".Activity5">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="268dp"
-        android:layout_height="31dp"
-        android:layout_marginEnd="132dp"
-        android:layout_marginRight="132dp"
-        android:layout_marginBottom="504dp"
-        android:text="@string/old_manufacturer_and_model"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="252dp"
-        android:layout_height="28dp"
-        android:layout_marginEnd="148dp"
-        android:layout_marginRight="148dp"
-        android:layout_marginBottom="352dp"
-        android:text="@string/new_manufacturer_and_model"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/buttonCancel1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginLeft="80dp"
-        android:layout_marginBottom="116dp"
-        android:text="@android:string/cancel"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/buttonSave1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="80dp"
-        android:layout_marginRight="80dp"
-        android:layout_marginBottom="116dp"
-        android:text="@string/save"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="395dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="60dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/TextInputEditOld"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:layout_height="66dp"
+            android:orientation="horizontal">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="395dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="121dp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonCancel1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Please enter detail of the new moto:"
+                android:textSize="22sp" />
+        </LinearLayout>
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/TextInputEditNew"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </com.google.android.material.textfield.TextInputLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_height="244dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="91dp"
+                    android:layout_height="40dp"
+
+                    android:layout_marginStart="60dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="22dp"
+                    android:text="@string/marca"
+                    android:textSize="22sp"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/TextInputLayoutMarca"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="91dp"
+                    android:layout_height="40dp"
+
+                    android:layout_marginStart="60dp"
+                    android:layout_marginLeft="60dp"
+                    android:text="@string/modelo"
+                    android:textSize="22sp"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/TextInputLayoutModelo"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="111dp"
+                    android:layout_height="40dp"
+
+                    android:layout_marginStart="60dp"
+                    android:layout_marginLeft="60dp"
+                    android:text="@string/cilindrada"
+                    android:textSize="22sp"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/TextInputLayoutLotacao" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="91dp"
+                    android:layout_height="40dp"
+
+                    android:layout_marginStart="60dp"
+                    android:layout_marginLeft="60dp"
+                    android:baselineAligned="false"
+                    android:text="@string/peso"
+                    android:textSize="22sp"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="178dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TextInputLayoutMarca3"
+                    android:layout_width="205dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TextInputLayoutModelo3"
+                    android:layout_width="205dp"
+                    android:layout_height="40dp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TextInputLayoutCilindrada"
+                    android:layout_width="205dp"
+                    android:layout_height="40dp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TextInputLayoutPeso3"
+                    android:layout_width="205dp"
+                    android:layout_height="40dp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonSave3"
+                android:layout_width="103dp"
+                android:layout_height="59dp"
+
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="80dp"
+                android:background="@android:color/background_dark"
+                android:text="@string/save"
+                android:textColor="@color/colorAccent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/buttonCancelar3"
+                android:layout_width="103dp"
+                android:layout_height="60dp"
+
+                android:background="@android:color/background_dark"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:text="@string/cancelar"
+                android:textColor="@color/colorAccent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:background="@android:color/background_dark" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/ListViewMotas2"
+            android:layout_width="match_parent"
+            android:layout_height="188dp"
+            android:layout_margin="20dp"
+            android:background="@color/colorAccent" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

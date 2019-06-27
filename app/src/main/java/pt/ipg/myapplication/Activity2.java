@@ -38,7 +38,7 @@ try {
     editModelo = (TextInputEditText) findViewById(R.id.TextInputLayoutModelo);
     editLotacao = (TextInputEditText) findViewById(R.id.TextInputLayoutLotacao);
     editTracao = (TextInputEditText) findViewById(R.id.TextInputLayoutTracao2);
-    editPeso = (TextInputEditText) findViewById(R.id.TextInputLayoutPeso);
+    editPeso = (TextInputEditText) findViewById(R.id.TextInputLayoutPeso3);
     buttonSave =  findViewById(R.id.buttonSaveNovo);
 
     ListaCarros.setAdapter(Sql_Carros.listar(this));
@@ -55,14 +55,7 @@ try {
     buttonSave.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-/*
-            String mensagem = editMarca.getText().toString();
 
-            if (mensagem.trim().length() == 0) {
-                editMarca.setError(getString(R.string.obrigatorio_escrever));
-            } else if (!mensagem.matches("[a-zA-Z ]+")) {
-                editMarca.setError(getString(R.string.caracteres_especiais));
-            } else {*/
                 Carro novocarro = new Carro();
                 novocarro.setMarca(editMarca.getText().toString());
                 novocarro.setModelo(editModelo.getText().toString());
@@ -75,33 +68,12 @@ try {
                 Toast.makeText(Activity2.this, "Carro adicionado.", Toast.LENGTH_SHORT).show();
                 ListaCarros.setAdapter(Sql_Carros.listar(Activity2.this));
             }
-       /* }*/
+
     });
 }catch (Exception e){
     Toast.makeText(Activity2.this, e.getMessage(), Toast.LENGTH_SHORT).show();
 
 }
     }
-    /*
-        public void btn_save(View v) {
 
-                String mensagem = editMarca.getText().toString();
-
-                if (mensagem.trim().length() == 0) {
-                    editMarca.setError(getString(R.string.obrigatorio_escrever));
-                } else if (!mensagem.matches("[a-zA-Z ]+")) {
-                    editMarca.setError(getString(R.string.caracteres_especiais));
-                } else {
-        Carro novocarro = new Carro();
-        novocarro.setMarca(editMarca.getText().toString());
-        novocarro.setModelo(editModelo.getText().toString());
-        novocarro.setLotacao(Float.parseFloat(editLotacao.getText().toString()));
-        novocarro.setTracao(editTracao.getText().toString());
-        novocarro.setPeso(Float.parseFloat(editPeso.getText().toString()));
-
-        Sql_Carros.inserir(novocarro);
-
-        Toast.makeText(Activity2.this, "Carro adicionado.", Toast.LENGTH_SHORT).show();
-        ListaCarros.setAdapter(Sql_Carros.listar(Activity2.this));
-    }*/
 }

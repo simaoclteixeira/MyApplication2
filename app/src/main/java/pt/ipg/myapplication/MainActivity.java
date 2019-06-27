@@ -9,8 +9,6 @@ import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button buttonCarros;
-    private Button buttonMotas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,9 +50,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intent);
         }
 
-    public void openActivity4() {
-        Intent intent = new Intent(this, Activity4.class);
-        startActivity(intent);
-    }
+
 
 }

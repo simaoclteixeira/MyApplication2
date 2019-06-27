@@ -36,6 +36,7 @@ public class Activity6 extends AppCompatActivity {
             BD = new BaseDados(this);
             conn = BD.getWritableDatabase();
             Sql_Carros = new Carros_Sql(conn);
+            carro_sel=new Carro();
 
             ListaCarros = findViewById(R.id.ListViewCarros2);
 
@@ -69,43 +70,49 @@ public class Activity6 extends AppCompatActivity {
             buttonCancelar.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if (carro_sel==null) {
-                        Toast.makeText(Activity6.this, "Erro", Toast.LENGTH_LONG);
+
+
+                        if ((carro_sel.getId_Carros() <= 0)) {
+                            Toast.makeText(Activity6.this, "Erro", Toast.LENGTH_LONG).show();
+                        } else {
+                            AlertDialog.Builder msg = new AlertDialog.Builder(Activity6.this);
+                            msg.setMessage("Deseja Eliminar?")
+                                    .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialog, int which) {
+                                            try {
+                                                Sql_Carros.eliminar(carro_sel.getId_Carros());
+                                                Toast.makeText(Activity6.this, "Eliminado", Toast.LENGTH_LONG).show();
+                                                ListaCarros.setAdapter(Sql_Carros.listar(Activity6.this));
+
+                                                carro_sel = null;
+                                                editMarca.setText("");
+                                                editModelo.setText("");
+                                                editLotacao.setText("");
+                                                editTracao.setText("");
+                                                editPeso.setText("");
+
+                                            }catch (Exception e) {
+                                                Toast.makeText(Activity6.this, e.getMessage(), Toast.LENGTH_LONG).show();
+
+                                            }
+                                        }
+                                    })
+                                    .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialog, int which) {
+
+                                        }
+                                    })
+                                    .show();
+
+                        }
+
+
+                        ListaCarros.setAdapter(Sql_Carros.listar(Activity6.this));
+                        //  finish();
                     }
-                    else {
-                        AlertDialog.Builder msg = new AlertDialog.Builder(Activity6.this);
-                        msg.setMessage("Deseja Eliminar?")
-                                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                                    @Override
-                                    public void onClick(DialogInterface dialog, int which) {
-                                        Sql_Carros.eliminar(carro_sel.getId_Carros());
-                                        Toast.makeText(Activity6.this, "Eliminado", Toast.LENGTH_LONG);
-                                        ListaCarros.setAdapter(Sql_Carros.listar(Activity6.this));
-                                        
-                                        carro_sel=null;
-                                        editMarca.setText("");
-                                        editModelo.setText("");
-                                        editLotacao.setText("");
-                                        editTracao.setText("");
-                                        editPeso.setText("");
 
-                                    }
-                                })
-                                .setNegativeButton("No", new DialogInterface.OnClickListener() {
-                                    @Override
-                                    public void onClick(DialogInterface dialog, int which) {
-
-                                    }
-                                })
-                                .show();
-
-                    }
-
-
-
-                    ListaCarros.setAdapter(Sql_Carros.listar(Activity6.this));
-                  //  finish();
-                }
             });
 
             Button buttonPesquisar = findViewById(R.id.buttonSaveNovo2);

@@ -21,7 +21,7 @@ public class BaseDados extends SQLiteOpenHelper {
 
         db.execSQL(creat_tbl_carros());
         db.execSQL(creat_tbl_motas());
-        db.execSQL(creat_tbl_utilizadores());
+
 
 
     }
@@ -49,21 +49,11 @@ public class BaseDados extends SQLiteOpenHelper {
                 "Id_Motas Integer Primary Key Autoincrement,  "   +
                 "Marca Text, " +
                 "Modelo text, " +
-                "Tração text, " +
+                "Cilindrada real, " +
                 "Peso real " +
                 ") ";
         return a;
     }
 
-    public static String creat_tbl_utilizadores(){
-        a="Create table if not exists TBL_Utilizadores (" +
-                "Id_Utilizador Integer Primary Key Autoincrement,  "   +
-                "Nome Text, " +
-                "Email text, " +
-                "Data de Nascimento text, " +
-                "Morada text " +
-                ") ";
-        return a;
-    }
 
 }
